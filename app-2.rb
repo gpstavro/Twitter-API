@@ -38,11 +38,11 @@
 # # The consumer key identifies the application making the request.
 # # The access token identifies the user making the request.
 # consumer_key = OAuth::Consumer.new(
-#     	"KMRKV6BiKzjofJ8FtxByHBxp5",
-#     "SJdfN3Z1Q9svCDeQsHrSoMlfYDYn7NRkOet5Wh8bS75U4wZx03")
+#     	"xxxxx",
+#     "xxxxx")
 # access_token = OAuth::Token.new(
-#     "1408310155-0TLiOS2vX4sAOzeGm3sijwNTEPtgIFj93Gh0Jrg",
-#     "vrX5WizVcR3ofKcZMUeqEBSuxxKuqftAbmMUMWwsRaqsu")
+#     "xxxxx",
+#     "xxxxx")
 
 # # All requests will be sent to this server.
 # baseurl = "https://api.twitter.com"
@@ -148,10 +148,10 @@ http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 # exercise, no need to enter them again here. The
 # ||= operator will only assign these values if
 # they are not already set.
-consumer_key ||= OAuth::Consumer.new "KMRKV6BiKzjofJ8FtxByHBxp5",
-    "SJdfN3Z1Q9svCDeQsHrSoMlfYDYn7NRkOet5Wh8bS75U4wZx03"
-access_token ||= OAuth::Token.new "1408310155-0TLiOS2vX4sAOzeGm3sijwNTEPtgIFj93Gh0Jrg",
-    "vrX5WizVcR3ofKcZMUeqEBSuxxKuqftAbmMUMWwsRaqsu"
+consumer_key ||= OAuth::Consumer.new "xxxxx",
+    "xxxxx"
+access_token ||= OAuth::Token.new "xxxxx",
+    "xxxxx"
 
 # Issue the request.
 request.oauth! http, consumer_key, access_token
